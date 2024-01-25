@@ -48,17 +48,15 @@ header section:nth-child(1){
     width: 100%;
     height: auto;
     background: var(--black-color-tone3);
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    padding: 5px 0px;
-    column-gap: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 12%;
 }
 
 header section:nth-child(1) > div:nth-child(1){
     display: flex;
     column-gap: 14px;
     align-items: center;
-    margin-left: 35%;
 }
 
 header section:nth-child(1) > div:nth-child(2){
