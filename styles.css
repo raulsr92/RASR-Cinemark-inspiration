@@ -1,11 +1,62 @@
+/* --------- Estilos Globales--------- */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background: var(--background);
+    display: grid;
+    justify-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* --------- Paleta de Colores--------- */
+
+:root {
+    --main-color: #b5121c;
+    --main-color-soft: #F9BCC0;
+    --black-color-tone1: #000000;
+    --black-color-tone2: #545454;
+    --black-color-tone3: #ECECEC;
+    --black-color-tone4: #333333;
+    --background: #DEDEDE;
+    --white: #FFFFFF;
+
+}
+
+/* --------- Estilos Cabecera--------- */
+
 header{
-    width: 100%;
+    width: 95%;
     min-width: 360px;
     height: auto;
+    background: var(--white);
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+header section:nth-child(1){
+    width: 100%;
+    background: var(--black-color-tone3);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 10px 0px;
+}
+
+header section:nth-child(1) div:nth-child(1){
+    grid-column: 2/3;
+    display: flex;
+}
+
+header section:nth-child(1) div:nth-child(2){
+    grid-column: 6/10;
+    display: flex;
+    column-gap: 15px;
 }
