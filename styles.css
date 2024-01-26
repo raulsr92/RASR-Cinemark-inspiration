@@ -28,6 +28,7 @@ a{
     --black-color-tone3: #ECECEC;
     --black-color-tone4: #333333;
     --black-color-tone5:#8F8F8F;
+    --black-color-tone6:#767676;
     --background: #DEDEDE;
     --white: #FFFFFF;
 
@@ -245,7 +246,7 @@ header nav img{
 /* --------- Estilos Ventana Emergente--------- */
 
 article{
-    width: 400px;
+    width: 420px;
     height: auto;
     box-shadow: 4px 3px 14px 4px var(--black-color-tone5);
     border: 0;
@@ -256,6 +257,8 @@ article section:nth-child(1){
     display: flex;
     justify-content: center;
     padding: 15px 10px;
+    align-items: center;
+    column-gap: 6px;
 
 }
 
@@ -263,20 +266,49 @@ article section:nth-child(2){
     background: var(--white);
 }
 
+/* ==== Jerarquía de textos  ==== */
+
+
 .text-class1{
     color: var(--black-color-tone2);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.text-class2{
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.text-icon{
+    color: var(--main-color);
     font-size: 14px;
     font-weight: 500;
 }
 
-.text-class1 span{
-    color: var(--main-color);
+
+/* ==== Fin Jerarquía de textos  ==== */
+
+.p-title{
+    color: var(--black-color-tone2);
+    font-size: 18px;
+    font-weight: 500;
+    align-self: center;
+}
+
+.p-content{
+    color: var(--black-color-tone6);
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
 }
 
 article section:nth-child(2){
     display: flex;
     flex-direction: column;
     padding: 20px 28px;
+    row-gap: 15px;
 }
 
 article section:nth-child(2) > div{
@@ -309,7 +341,7 @@ article section:nth-child(2) > div{
     background: var(--black-color-tone5);
     color: var(--white);
     font-size: 13px;
-    padding: 16px 28px;
+    padding: 16px 32px;
     font-weight: 600;
     border-radius: 4px;
 
@@ -317,7 +349,7 @@ article section:nth-child(2) > div{
 }
 
 .btn-header5:hover{
-    box-shadow: 0px 6px 10px 2px var(--black-color-tone5);
+    box-shadow: 0px 6px 10px 2px var(--main-color-soft);
 }
 
 /* ==== FIN Estilos boton 5  ==== */
