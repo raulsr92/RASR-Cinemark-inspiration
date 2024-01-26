@@ -43,6 +43,7 @@ header{
     background: var(--white);
     display: grid;
     grid-template-rows: repeat(2, auto);
+    box-shadow: 0px 4px 20px 0px var(--black-color-tone2);
 }
 
 header section:nth-child(1){
@@ -353,3 +354,17 @@ article section:nth-child(2) > div{
 }
 
 /* ==== FIN Estilos boton 5  ==== */
+
+/* ==== Estilos flecha afuera de la ventana  ==== */
+
+.text-icon-2{
+    transform: rotate(0.5turn);
+    font-size: 25px;
+    color: var(--black-color-tone3);
+    padding-left: 80px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
