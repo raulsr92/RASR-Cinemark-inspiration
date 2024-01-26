@@ -50,9 +50,8 @@ header section:nth-child(1){
     width: 100%;
     height: auto;
     background: var(--black-color-tone3);
-    display: flex;
-    justify-content: center;
-    column-gap: 25%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.4fr;
     padding: 5px 0;
     /*padding: 5px 12%;*/
 }
@@ -64,11 +63,14 @@ header section:nth-child(1) > div:nth-child(1){
     display: flex;
     column-gap: 14px;
     align-items: center;
+    justify-self: center;
 }
 
 header section:nth-child(1) > div:nth-child(2){
     display: flex;
     column-gap: 15px;
+    justify-self: end;
+
 }
 
 /* ==== Estilos íconos RRSS ==== */
@@ -148,7 +150,7 @@ header section:nth-child(1) > div:nth-child(2){
 header section:nth-child(1) > div:nth-child(2) > div:nth-child(1){
     display: flex;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 35px;
 }
 
 header section:nth-child(1) > div:nth-child(2) > div:nth-child(2){
@@ -167,8 +169,10 @@ header nav{
     /*padding: 0 12% 0 14%;*/
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    column-gap: 3%;
+    /*grid-template-columns: repeat(3, auto);*/
+    grid-template-columns: 1fr 2fr 1fr 0.4fr;
+    grid-template-rows: auto;
+    padding: 10px 0;
     /*justify-content: center;*/
 }
 
@@ -232,8 +236,8 @@ header nav > div:nth-child(2){
 header nav > div:nth-child(3){
     display: grid;
     justify-content: end; /*Permite que el boton no ocupe todo el ancho de su contenedor*/
-    justify-self: start;
-    padding-left: 30px;
+    justify-self: end;
+    /*padding-left: 30px;*/
 
 }
 
@@ -365,6 +369,19 @@ article section:nth-child(2) > div{
 }
 
 aside{
+    width: 420px;
     display: flex;
     flex-direction: column;
+}
+
+/* --------- Posicionar Ventana --------- */
+
+header{
+    position: relative;
+}
+
+aside{
+    position: absolute;
+    top: 100%;
+    right: 9.09%;
 }
