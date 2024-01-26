@@ -49,8 +49,10 @@ header section:nth-child(1){
     height: auto;
     background: var(--black-color-tone3);
     display: flex;
-    justify-content: space-between;
-    padding: 5px 12%;
+    justify-content: center;
+    column-gap: 25%;
+    padding: 5px 0;
+    /*padding: 5px 12%;*/
 }
 
 /* --------- Parte Superior de la Cabecera --------- */
@@ -160,11 +162,18 @@ header nav{
     width: 100%;
     /*display: flex;
     justify-content: space-between;*/
-    padding: 0 12% 0 14%;
+    /*padding: 0 12% 0 14%;*/
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    column-gap: 3%;
+    /*justify-content: center;*/
 }
+
+header nav > a{
+    justify-self: end;
+}
+
 
 /* ==== Estilos boton 3 del header ==== */
 
@@ -212,14 +221,18 @@ header nav{
 
 header nav > div:nth-child(2){
     display: flex;
-    column-gap: 16px;
+    column-gap: 13px;
     height: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 header nav > div:nth-child(3){
     display: grid;
     justify-content: end; /*Permite que el boton no ocupe todo el ancho de su contenedor*/
+    justify-self: start;
+    padding-left: 30px;
+
 }
 
 /* ==== Estilos para imagen ==== */
