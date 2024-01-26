@@ -385,3 +385,9 @@ aside{
     top: 100%;
     right: 9.09%;
 }
+
+/* --------- Clase inactive --------- */
+
+.inactive{
+    display: none;
+}
